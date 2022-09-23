@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Site Like Linkedin</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <!-- Start nabvar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="" />
+                </a>
+                <div class="search-box">
+                    <img src="images/search.png" alt="Search" />
+                    <input type="text" placeholder="Search" />
+                </div>
+            </div>
+            <div class="navbar-center">
+                <ul>
+                    <li>
+                        <a href="#" class="active-link">
+                            <img src="images/home.png" alt="Home" />
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/network.png" alt="Ny Network" />
+                            <span>My Network</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/jobs.png" alt="jobs" />
+                            <span>Jobs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/message.png" alt="Messaging" />
+                            <span>Messaging</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src="images/notification.png"
+                                alt="Notifications"
+                            />
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-right">
+                <div class="online">
+                    <img
+                        src="images/user-1.png"
+                        class="nav-profile-img"
+                        alt="user-1"
+                        onclick="toggleMenu()"
+                    />
+                </div>
+            </div>
+
+            <!-- profile-drop-down-menu -->
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img
+                            src="images/user-1.png"
+                            alt="user-1"
+                            onclick="toggleMenu()"
+                        />
+                        <div>
+                            <h3>Rayan Walton</h3>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr />
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/feedback.png" alt="Feedback" />
+                        <p>Give Feedback</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/setting.png" alt="Feedback" />
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/help.png" alt="Feedback" />
+                        <p>Help & Suport</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/display.png" alt="Feedback" />
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/logout.png" alt="Feedback" />
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End nabvar -->
+
+        <!-- profile main -->
+        <div class="container">
+            <div class="profile-main">
+                <div class="profile-container">
+                    <img
+                        src="images/cover-pic.png"
+                        alt="cover-pic"
+                        width="100%"
+                    />
+                    <div class="profile-container-inner">
+                        <img
+                            src="images/user-1.png"
+                            alt="user-1"
+                            class="profile-pic"
+                        />
+                        <h1>Rayan Walton</h1>
+                        <b
+                            >Web Developer at Microsoft | Former developer at
+                            DataStack and Intern at Oracle</b
+                        >
+                        <p>
+                            San Francisco, United States &middot;
+                            <a href="#">Contact Info</a>
+                        </p>
+                        <div class="mutual-connection">
+                            <img src="images/user-2.png" alt="user-2" />
+                            <span>1 mutual-connection: Orlando Diggs</span>
+                        </div>
+
+                        <div class="profile-btn">
+                            <a href="#" class="primary-btn">
+                                <img src="images/connect.png" alt="connect" />
+                                Connect
+                            </a>
+                            <a href="#">
+                                <img src="images/chat.png" alt="connect" />
+                                Message
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-description">
+                    <h2>About</h2>
+                    <p>
+                        The success of every websites depends on search engine
+                        optimisation and digital marketing strategy. If you are
+                        on first page of all major search engines then you are
+                        ahead among your competitors
+                    </p>
+                    <a href="#" class="see-more-link">See more...</a>
+                </div>
+                <div class="profile-description">
+                    <h2>Experience</h2>
+                    <div class="profile-desc-row"></div>
+                    <img src="images/microsoft.png" alt="microsoft" />
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Feb 2021 - Present</b>
+                    </div>
+                </div>
+            </div>
+
+            <!-- profile sidebar -->
+
+            <div class="profile-sidebar"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
