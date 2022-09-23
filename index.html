@@ -65,16 +65,24 @@
             </div>
             <div class="navbar-right">
                 <div class="online">
-                    <img src="images/user-1.png" class="nav-profile-img "
-                    user-1" />
+                    <img
+                        src="images/user-1.png"
+                        class="nav-profile-img"
+                        alt="user-1"
+                        onclick="toggleMenu()"
+                    />
                 </div>
             </div>
 
             <!-- profile-drop-down-menu -->
-            <div class="profile-menu-wrap">
+            <div class="profile-menu-wrap" id="profileMenu">
                 <div class="profile-menu">
                     <div class="user-info">
-                        <img src="images/user-1.png" alt="user-1" />
+                        <img
+                            src="images/user-1.png"
+                            alt="user-1"
+                            onclick="toggleMenu()"
+                        />
                         <div>
                             <h3>Rayan Walton</h3>
                             <a href="#">See your profile</a>
@@ -84,6 +92,26 @@
                     <a href="#" class="profile-menu-link">
                         <img src="images/feedback.png" alt="Feedback" />
                         <p>Give Feedback</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/setting.png" alt="Feedback" />
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/help.png" alt="Feedback" />
+                        <p>Help & Suport</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/display.png" alt="Feedback" />
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="profile-menu-link">
+                        <img src="images/logout.png" alt="Feedback" />
+                        <p>Logout</p>
                         <span>></span>
                     </a>
                 </div>
